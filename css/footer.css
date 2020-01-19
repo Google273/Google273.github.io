@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+footer {
+background:url(../img/header3.jpg) no-repeat center top/ cover;
+height:350px;
+/*width:100%;
+margin-top:-40px*/;
+}
+
+.phone {
+    font-size:33px;
+    color:#00FF00;
+    float: left;
+}
+.me {
+    font-size: 33px;
+    color: #00FF00;
+    padding-left: 800px;
+
+}
+.logo .kar{
+  padding-top: 80px; 
+  margin-top:15px ;
+
+}
+
+.logo img {
+    float: right;
+
+}
+.logo img:hover {
+    opacity: 0.5;
+
+}   
+.kar:hover {
+    opacity: 0.5;
+}
+.logo .google:hover {
+    opacity: 0.5і;
+}

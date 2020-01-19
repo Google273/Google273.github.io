@@ -1,0 +1,565 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    
+}
+html {
+
+}
+header {
+    font-family: 'Kulim Park', sans-serif;
+    background:url(../img/header3.jpg) no-repeat center top/ cover;
+    height:300px;
+    margin-top:-40px;
+   
+}
+.title {
+     color:	#00FF00;
+    font-size:30px;
+    
+    padding-bottom:100px;
+    padding-top:80px;
+    text-align:center; 
+
+}
+
+.more {
+   margin-top: -75px;
+    color: 	green;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+p {
+    color: 	black;  
+    font-size: 23px;
+        
+}
+
+naw {
+    align-items: center;
+}
+li {
+    display:block;
+    margin: 0;
+    margin:0;
+    list-style-type: none;   
+   
+
+}
+
+
+.menu a {
+    font-size:15px;
+    font-weight:bold;
+    text-decoration:none;
+    color:white;
+    margin-left:300px;
+    padding:8px 0;
+}   
+
+.menu {
+    display: flex;
+    padding-top:16px;
+
+   
+}
+.menu li {
+ float:left;
+ padding-top:20px;
+
+}
+
+
+}
+a.photo {
+  
+
+}
+.menu li.active a {
+    color:	#00FF00;
+    border-top:1px solid 	#00FF00;
+    border-bottom:1px solid 	#00FF00;
+
+
+}
+
+a.gune:hover {
+    color:	#00FF00;
+    border-top:1px solid 	#00FF00;
+    border-bottom:1px solid 	#00FF00;
+}
+
+section {
+    padding-top:100px;
+    font-size: 20px;
+}
+ 
+ 
+  /***********************Фото******************************/
+  div .photoall {
+    width: 300px;
+    margin-top: 30px;
+     margin-left: 0px;
+    border: solid 4px #00FF00 ;
+  }
+  div .photoall:last-child {
+      margin-bottom:30px;
+  }
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+/*Адаптивность*/
+@media(min-width:0) and (max-width:320px) {
+    .menu a {
+        margin-left:0px;
+        margin-left:15px;
+    }
+    body {
+        display: block; 
+    }
+    html {
+        overflow-x: hidden;
+    }
+    header {
+      height: 300px;  
+    
+  
+    
+    }
+    .titlee {
+      font-size: 25px;  
+      margin-top: -1px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .all {
+       width:220px;
+
+    }  
+    #slider {
+        margin-left: 25px;
+    }
+   /*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url(../img/next.png) no-repeat; /*заливка фона картинкой без повторений*/
+    float: right;
+   
+	margin: -25px -84px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url(../img/prev.png) no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: -25px 0 -40px -75px; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+#controls {
+    height:9px;
+}
+#controls switch {
+   height: 1px;
+}
+p {
+    width: 100%;
+    padding-top: 13px;
+    font-size: 18px;
+    text-align: center;
+}
+hr {
+    position:absolute ;
+    left: 0;
+    right: 0;
+    width:100%;  
+}
+  
+
+.titlerd {
+    margin: 0;
+    text-align: center;
+    margin-top: -66px;
+    padding-bottom: -45px;
+    font-size: 30px;
+}
+
+.name {
+   padding: 0;
+    font-size: 28px;
+    margin-top:45px;
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 38px;
+}
+.alltext {
+    text-align: center;
+    padding-right:0px;
+    padding-left:px;
+    margin-top: 0 auto;
+    max-width: 100%;
+    height: auto;
+
+
+}
+.more {
+  font-size: 25px;
+}
+.text {
+    padding-left: 20px;
+ 
+}
+.gordon {
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
+/******************************Для фото****************************/
+
+
+
+
+
+footer .me {
+    font-size:25px ;
+    padding-right:143px;
+    float: right;
+}
+footer .phone {
+    font-size:25px ;
+}
+footer .google {
+    padding-top:97px;
+    padding-right:180px;
+    float: right;
+}
+footer .kar {
+    float: right;
+    padding-right:6px;
+    padding-top:97px;
+
+}
+footer {
+    width: 500px;
+    height: 400px;
+    padding-left: -50px;
+}
+}
+
+@media(min-width:321px) and (max-width:430px) {
+    .menu a {
+        margin-left:0px;
+        margin-left:15px;
+    }
+    body {
+        display: block; 
+    }
+    html {
+        overflow-x: hidden;
+    }
+    header {
+      height: 300px;  
+    
+  
+    
+    }
+    .titlee {
+      font-size: 25px;  
+      margin-top: -1px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .all {
+       width:220px;
+
+    }  
+    #slider {
+        margin-left: 25px;
+    }
+   /*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url(../img/next.png) no-repeat; /*заливка фона картинкой без повторений*/
+    float: right;
+   
+	margin: -25px -84px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url(../img/prev.png) no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: -25px 0 -40px -75px; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+#controls {
+    height:9px;
+}
+#controls switch {
+   height: 1px;
+}
+p {
+    width: 100%;
+    padding-top: 13px;
+    font-size: 18px;
+    text-align: center;
+}
+hr {
+    position:absolute ;
+    left: 0;
+    right: 0;
+    width:100%;  
+}
+  
+
+.titlerd {
+    margin: 0;
+    text-align: center;
+    margin-top: -66px;
+    padding-bottom: -45px;
+    font-size: 30px;
+}
+
+.name {
+   padding: 0;
+    font-size: 28px;
+    margin-top:45px;
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 38px;
+}
+.alltext {
+    text-align: center;
+    padding-right:0px;
+    padding-left:px;
+    margin-top: 0 auto;
+    max-width: 100%;
+    height: auto;
+
+
+}
+.more {
+  font-size: 25px;
+}
+.text {
+    padding-left: 20px;
+ 
+}
+.gordon {
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
+/******************************Для фото****************************/
+
+
+
+
+
+footer .me {
+    font-size:25px ;
+    padding-right:143px;
+    float: right;
+}
+footer .phone {
+    font-size:25px ;
+}
+footer .google {
+    padding-top:97px;
+    padding-right:180px;
+    float: right;
+}
+footer .kar {
+    float: right;
+    padding-right:6px;
+    padding-top:97px;
+
+}
+footer {
+    width: 500px;
+    height: 400px;
+    padding-left: -50px;
+}
+}
+
+
+@media(min-width:431px) and (max-width:530px) {
+    .menu a {
+        margin-left:0px;
+        margin-left:55px;
+    }
+    body {
+        display: block; 
+    }
+    html {
+        overflow-x: hidden;
+    }
+    header {
+      height: 300px;  
+    
+  
+    
+    }
+    .titlee {
+      font-size: 25px;  
+      margin-top: -1px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .all {
+       width:220px;
+
+    }  
+    #slider {
+        margin-left: 25px;
+    }
+   /*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url(../img/next.png) no-repeat; /*заливка фона картинкой без повторений*/
+    float: right;
+   
+	margin: -25px -84px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url(../img/prev.png) no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: -25px 0 -40px -75px; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+#controls {
+    height:9px;
+}
+#controls switch {
+   height: 1px;
+}
+p {
+    width: 100%;
+    padding-top: 13px;
+    font-size: 18px;
+    text-align: center;
+}
+hr {
+    position:absolute ;
+    left: 0;
+    right: 0;
+    width:100%;  
+}
+  
+
+.titlerd {
+    margin: 0;
+    text-align: center;
+    margin-top: -66px;
+    padding-bottom: -45px;
+    font-size: 30px;
+}
+
+.name {
+   padding: 0;
+    font-size: 28px;
+    margin-top:45px;
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 38px;
+}
+.alltext {
+    text-align: center;
+    padding-right:0px;
+    padding-left:px;
+    margin-top: 0 auto;
+    max-width: 100%;
+    height: auto;
+
+
+}
+.more {
+  font-size: 25px;
+}
+.text {
+    padding-left: 20px;
+ 
+}
+.gordon {
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
+/******************************Для фото****************************/
+
+
+
+
+
+footer .me {
+    font-size:25px ;
+    padding-right:143px;
+    float: right;
+}
+footer .phone {
+    font-size:25px ;
+}
+footer .google {
+    padding-top:97px;
+    padding-right:180px;
+    float: right;
+}
+footer .kar {
+    float: right;
+    padding-right:6px;
+    padding-top:97px;
+
+}
+footer {
+    width: 500px;
+    height: 400px;
+    padding-left: -50px;
+}
+
+
+w
